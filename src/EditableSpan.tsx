@@ -14,6 +14,8 @@ function EditableSpan(props: EditableSpanPropsType) {
     const offEditMode = () => {
         if (title) {
             props.changeTitle(title)
+        }else{
+            setTitle(props.title)
         }
         setEditMode(false)
     }
