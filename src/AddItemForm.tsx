@@ -6,7 +6,7 @@ type AddItemFormPropsType = {
 }
 
 function AddItemForm(props: AddItemFormPropsType) {
-    const [title, setTitle] = useState("")
+    const [title, setTitle] = useState<string>("")
     const [error, setError] = useState<boolean>(false)
     const errorMessage = 'Title is required!'
 
