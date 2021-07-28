@@ -1,16 +1,16 @@
-.App {
-  padding: 30px;
-  display: flex;
-}
+/*.App {*/
+/*  padding: 30px;*/
+/*  display: flex;*/
+/*}*/
 
-.App > div {
-  margin-right: 50px;
-}
+/*.App > div {*/
+/*  margin-right: 50px;*/
+/*}*/
 
-.active {
-  background-color: cornflowerblue;
-}
+/*.active {*/
+/*  background-color: cornflowerblue;*/
+/*}*/
 
 .is-done {
-  opacity: 0.5;
+  opacity: 0.3;
 }
