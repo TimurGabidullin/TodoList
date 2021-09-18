@@ -8,13 +8,13 @@ import {Menu} from "@material-ui/icons";
 
 export type FilterValuesType = "all" | "active" | "completed";
 
-export type TodoListType={
-    id:string
-    title:string
-    filter:FilterValuesType
+export type TodoListType = {
+    id: string
+    title: string
+    filter: FilterValuesType
 }
 
-type TaskStateType = {
+export type TasksStateType = {
     [key: string]: Array<TaskType>
 }
 
@@ -32,7 +32,7 @@ function App() {
         {id: todoListID_2, title: "What to buy", filter: 'all'}
     ])
 
-    const [tasks, setTasks] = useState<TaskStateType>({
+    const [tasks, setTasks] = useState<TasksStateType>({
         [todoListID_1]: [
             {id: v1(), title: "HTML&CSS", isDone: true},
             {id: v1(), title: "JS", isDone: true},
