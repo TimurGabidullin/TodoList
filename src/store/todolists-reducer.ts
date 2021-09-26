@@ -14,7 +14,7 @@ export type AddTodoListAT = {
     todoListId: string
 }
 
-export type ChangeTodoListAT = {
+export type ChangeTodoListTitleAT = {
     type: "CHANGE-TODOLIST-TITLE"
     title: string
     todoListId: string
@@ -26,7 +26,7 @@ export type ChangeTodoListFilterAT = {
     todoListId: string
 }
 
-export type ActionsType = RemoveTodoListAT | AddTodoListAT | ChangeTodoListAT | ChangeTodoListFilterAT
+export type ActionsType = RemoveTodoListAT | AddTodoListAT | ChangeTodoListTitleAT | ChangeTodoListFilterAT
 
 
 export const todoListsReducer = (todoLists: Array<TodoListType>, action: ActionsType): Array<TodoListType> => {
@@ -71,7 +71,7 @@ export const AddTodoListAC = (title: string): AddTodoListAT => {
     }
 }
 
-export const ChangeTodoListAC = (title: string, todoListId: string): ChangeTodoListAT => {
+export const ChangeTodoListTitleAC = (title: string, todoListId: string): ChangeTodoListTitleAT => {
     return {
         type: "CHANGE-TODOLIST-TITLE",
         title,
