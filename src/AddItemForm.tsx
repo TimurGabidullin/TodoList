@@ -7,7 +7,7 @@ type AddItemFormPropsType = {
     addItem: (title:string) => void
 }
 
-const AddItemForm=React.memo(function (props: AddItemFormPropsType) {
+export const AddItemForm=React.memo(function (props: AddItemFormPropsType) {
 
     const [title, setTitle] = useState<string>("")
     const [error, setError] = useState<boolean>(false)
