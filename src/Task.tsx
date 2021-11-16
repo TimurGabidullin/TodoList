@@ -23,6 +23,7 @@ export const Task = React.memo(((props: TaskPropsType) => {
 
     const changeTaskTitleHandler = (title: string) => {
         props.changeTaskTitle(props.task.id, title, props.todoListId)
+        console.log('test')
     }
 
     const onClickHandler = () => props.removeTask(props.task.id, props.todoListId)
